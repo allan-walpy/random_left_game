@@ -6,7 +6,7 @@
 using namespace std;
 
 const string app_name = "random_left_game";
-const string app_version = "0.1.0-zero";
+const string app_version = "0.1.1-zero";
 const string app_author = "allan_walpy";
 
 int main()
