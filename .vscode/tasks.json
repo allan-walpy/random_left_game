@@ -3,14 +3,14 @@
 	"tasks": [
         {
             "type": "cppbuild",
-            "label": "g++/user/build/file",
+            "label": "g++/user/build",
             "command": "/usr/bin/g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${workspaceFolder}/*.cpp",
                 "-o",
-                "${workspaceFolder}/out/${relativeFileDirname}/${fileBasenameNoExtension}"
+                "${workspaceFolder}/out/app"
             ],
             "options": {
                 "cwd": "${fileDirname}"
