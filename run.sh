@@ -1,5 +1,5 @@
 mkdir -p out \
-    && g++ *.cpp -o ./out/app \
+    && g++ ./src/*.cpp -o ./out/app \
     && cd out \
     && ./app \
     || cd ..
