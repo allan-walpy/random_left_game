@@ -8,17 +8,29 @@ const string app_name = "random_left_game";
 const string app_version = "0.1.0-zero";
 const string app_author = "allan_walpy";
 
-class operation_data
+class OperationData
 {
-public:
-    int first;
-    int second;
+private:
+    int _first;
+    int _second;
 
+public:
     int answer;
+
+    OperationData(int in_first, int in_second)
+    {
+        _first = in_first;
+        _second = in_second;
+    }
+
+    string getQuestion()
+    {
+        return to_string(_first) + "-" + to_string(_second);
+    }
 
     bool isCorrect()
     {
-        return answer == first - second;
+        return answer == _first - _second;
     }
 };
 
@@ -28,10 +40,8 @@ int main()
     info = info.append(";");
     cout << info << endl;
 
-    operation_data data;
-    data.first = 13;
-    data.second = 27;
-    cout << data.first << "-" << data.second << " = ";
+    OperationData data(13, 27);
+    cout << data.getQuestion() << " = ";
     cin >> data.answer;
     cout << (data.isCorrect() ? "correct 👌" : "WRONG!") << endl;
 
