@@ -5,6 +5,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    print_footer();
+    print_copyright();
+    cin.get();
     return 0;
 }
