@@ -2,18 +2,17 @@
 	"version": "2.0.0",
 	"tasks": [
         {
-            "type": "cppbuild",
+            "type": "shell",
             "label": "clang++/build",
             "command": "/usr/bin/clang++",
             "args": [
-                "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}/src/*.cpp",
                 "-o",
                 "${workspaceFolder}/out/app"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}/out"
             },
             "problemMatcher": [
                 "$gcc"
@@ -21,8 +20,8 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "detail": "compiler: /usr/bin/clang++"
+            }
         }
     ]
 }
+/* "-std=c++17", "-stdlib=libc++", */

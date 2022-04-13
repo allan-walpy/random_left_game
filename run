@@ -2,4 +2,4 @@
 
 mkdir -p out
 rm -f ./out/app
-clang++ ./src/*.cpp -o ./out/app  && ./app
+clang++ ./src/*.cpp -o ./out/app  && cd ./out/ && ./app && cd .. || cd ..

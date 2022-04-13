@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "clang++/build/debug",
+            "name": "g++/clang-build",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/out/app",
@@ -11,9 +11,9 @@
             "cwd": "${workspaceFolder}/out/",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "lldb",
+            "MIMode": "gdb",
             "preLaunchTask": "clang++/build",
-            "miDebuggerPath": "/usr/bin/lldb"
+            "miDebuggerPath": "/usr/bin/gdb"
         }
     ]
 }
