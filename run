@@ -1,8 +1,5 @@
 #!/bin/bash
 
 mkdir -p out
-
-cd out
-rm -f app -f *.ii  -f *.o -f *.s -f *.obj || true
-g++ ../src/*.cpp -o ./app -save-temps && ./app ||
-cd ..
+rm -f ./out/app
+clang++ ./src/*.cpp -o ./out/app  && ./app

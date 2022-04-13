@@ -14,5 +14,9 @@
 
     "git.enableCommitSigning": true,
 
-    "search.useIgnoreFiles": true
+    "search.useIgnoreFiles": true,
+
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0 }",
+    "C_Cpp.codeAnalysis.clangTidy.fallbackConfig": "{Checks: 'clang-analyzer-*,clang-analyzer-cplusplus*,android-*,boost-*,concurrency-*,cppcoreguidelines-*,google-*,misc-*,modernize-*,objc-*,performance-*,portability-*,readability-*'}",
+    "C_Cpp.formatting": "clangFormat"
 }

@@ -1,29 +1,19 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++/user/build/debug",
+            "name": "clang++/build/debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/out/app",
             "args": [],
-            "stopAtEntry": false,
+            "stopAtEntry": true,
             "cwd": "${workspaceFolder}/out/",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "gdb pretty-printing enabling",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "g++/user/build",
-            "miDebuggerPath": "/usr/bin/gdb"
+            "MIMode": "lldb",
+            "preLaunchTask": "clang++/build",
+            "miDebuggerPath": "/usr/bin/lldb"
         }
     ]
 }
