@@ -2,20 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "lldb-mi/clang-build",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/out/app",
-            "args": [],
-            "stopAtEntry": true,
-            "cwd": "${workspaceFolder}/out/",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "clang++/build",
-            "miDebuggerPath": "/home/allan_walpy/git/app/lldb-mi/src/lldb-mi"
-        },
-        {
             "name": "lldb/clang-build",
             "type": "lldb",
             "request": "launch",
