@@ -10,7 +10,7 @@
                 "${workspaceFolder}/src/*.cpp",
                 "-o",
                 "${workspaceFolder}/out/app",
-                "-std=c++17",
+                "-std=c++20",
                 "-pedantic-errors",
                 "-Werror",
                 "-Wall",
@@ -47,7 +47,7 @@
                 "${workspaceFolder}/src/*.cpp",
                 "-o",
                 "${workspaceFolder}/out/app",
-                "-std=c++17",
+                "-std=c++20",
                 "-pedantic-errors"
             ],
             "options": {
