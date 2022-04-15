@@ -11,6 +11,15 @@
             "preLaunchTask": "clang++/build"
         },
         {
+            "name": "lldb/clang-build",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/out/app",
+            "args": [],
+            "cwd": "${workspaceFolder}/out/",
+            "preLaunchTask": "g++/build"
+        },
+        {
             "name": "gdb/clang-build",
             "type": "cppdbg",
             "request": "launch",
@@ -22,6 +31,20 @@
             "externalConsole": false,
             "MIMode": "gdb",
             "preLaunchTask": "clang++/build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "gdb/g++-build",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/out/app",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}/out/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "g++/build",
             "miDebuggerPath": "/usr/bin/gdb"
         },
     ]
