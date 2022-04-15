@@ -11,7 +11,7 @@
             "preLaunchTask": "clang++/build"
         },
         {
-            "name": "lldb/clang-build",
+            "name": "lldb/g++-build",
             "type": "lldb",
             "request": "launch",
             "program": "${workspaceFolder}/out/app",
