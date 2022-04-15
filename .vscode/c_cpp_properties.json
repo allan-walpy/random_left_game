@@ -12,14 +12,12 @@
             "intelliSenseMode": "linux-clang-x64",
             "compilerArgs": [
                 "-pedantic-errors",
-                "-Weverything",
+                "-Wall",
+                "-Wextra",
+                "-Wsign-conversion",
+                "-Wnon-virtual-dtor",
                 "-ferror-limit=27",
-                "-fcolor-diagnostics",
-                "-fshow-column",
-                "-fshow-source-location",
-                "-fcaret-diagnostics",
-                "-fdiagnostics-format=clang",
-                "-fdiagnostics-show-category=id"
+                "-fdiagnostics-format=clang"
             ]
         }
     ],
