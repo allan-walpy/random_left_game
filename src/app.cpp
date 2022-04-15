@@ -1,9 +1,9 @@
 #include <iostream>
 #include "about.h"
 
-using namespace std;
+using std::cin;
 
-int main(int argc, char *argv[])
+auto main() -> int
 {
     print_copyright();
     cin.get();

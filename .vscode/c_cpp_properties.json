@@ -9,7 +9,18 @@
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "linux-clang-x64"
+            "intelliSenseMode": "linux-clang-x64",
+            "compilerArgs": [
+                "-pedantic-errors",
+                "-Weverything",
+                "-ferror-limit=27",
+                "-fcolor-diagnostics",
+                "-fshow-column",
+                "-fshow-source-location",
+                "-fcaret-diagnostics",
+                "-fdiagnostics-format=clang",
+                "-fdiagnostics-show-category=id"
+            ]
         }
     ],
     "version": 4

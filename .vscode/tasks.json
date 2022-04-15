@@ -11,7 +11,16 @@
                 "-o",
                 "${workspaceFolder}/out/app",
                 "-std=c++17",
-                "-pedantic-errors"
+                "-pedantic-errors",
+                "-Weverything",
+                "-ferror-limit=64",
+                "-fcolor-diagnostics",
+                "-fshow-column",
+                "-fshow-source-location",
+                "-fcaret-diagnostics",
+                "-fdiagnostics-format=clang",
+                "-fdiagnostics-show-category=id",
+                "-fdiagnostics-fixit-info"
             ],
             "options": {
                 "cwd": "${workspaceFolder}/out"
