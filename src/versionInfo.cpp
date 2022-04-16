@@ -1,27 +1,24 @@
 #include <string>
 
-using namespace std;
+using std::string, std::to_string;
 
-class VersionInfo
-{
-private:
+class VersionInfo {
+   private:
     int _major;
     int _minor;
     int _patch;
     string _appending;
 
-public:
+   public:
     VersionInfo(int major, int minor, int patch, string appending = "")
-    {
-        _major = major;
-        _minor = minor;
-        _patch = patch;
-        _appending = appending;
-    }
+        : _major(major), _minor(minor), _patch(patch), _appending(move(appending)) {}
 
-    string toString() const
-    {
-        return to_string(_major) + "." + to_string(_minor) + "." + to_string(_patch) +
-               (_appending == "" ? "" : "-" + _appending);
+    /**
+     * @brief stringifies version
+     *
+     * @return string
+     */
+    [[nodiscard]] auto toString() const -> string {
+        return to_string(_major) + "." + to_string(_minor) + "." + to_string(_patch) + (empty(_appending) ? _appending : "-" + _appending);
     }
 };
