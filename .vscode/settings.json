@@ -65,5 +65,4 @@
     "C_Cpp.codeAnalysis.clangTidy.path": "/usr/bin/clang-tidy",
     "C_Cpp.codeAnalysis.clangTidy.config": "",
     "C_Cpp.codeAnalysis.clangTidy.fallbackConfig": "",
-
 }

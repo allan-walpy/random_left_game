@@ -34,7 +34,7 @@ PenaltyBreakTemplateDeclaration: 4
 PenaltyExcessCharacter: 4
 PenaltyIndentedWhitespace: 0
 PenaltyReturnTypeOnItsOwnLine: 0
-AccessModifierOffset: 0
+AccessModifierOffset: -2
 AlignAfterOpenBracket: Align
 AlignArrayOfStructures: Right
 AlignConsecutiveAssignments: AcrossComments
@@ -142,7 +142,7 @@ SpaceBeforeRangeBasedForLoopColon: true
 SpaceBeforeSquareBrackets: false
 SpaceInEmptyBlock: true
 SpaceInEmptyParentheses: false
-SpacesBeforeTrailingComments: 4
+SpacesBeforeTrailingComments: 1
 SpacesInAngles: false
 SpacesInCStyleCastParentheses: false
 SpacesInConditionalStatement: false

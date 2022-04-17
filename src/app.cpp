@@ -1,7 +1,8 @@
 #include <iostream>
+
 #include "about.h"
 
-// >_> i am learning c++, go away <_<;
+//!! >_> i am learning c++, go away <_<;
 
 using std::cin, std::cout, std::endl;
 
@@ -10,11 +11,10 @@ using std::cin, std::cout, std::endl;
  *
  * @return int
  */
-auto main() -> int
-{
+auto main () -> int {
     cout << "program://launch" << endl;
 
-    print_about_info();
+    random_left::print_about_info();
     cin.get();
     return 0;
 }
