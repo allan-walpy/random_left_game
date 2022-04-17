@@ -64,6 +64,6 @@
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
     "C_Cpp.codeAnalysis.clangTidy.path": "/usr/bin/clang-tidy",
     "C_Cpp.codeAnalysis.clangTidy.config": "",
-    "C_Cpp.codeAnalysis.clangTidy.fallbackConfig": "{Checks: '-*, clang-analyzer-*,clang-analyzer-cplusplus*,android-*,boost-*,concurrency-*,cppcoreguidelines-*,google-*,misc-*,modernize-*,objc-*,performance-*,portability-*,readability-*'}",
+    "C_Cpp.codeAnalysis.clangTidy.fallbackConfig": "",
 
 }

@@ -13,7 +13,6 @@ Checks: |-
           concurrency-*,
           cppcoreguidelines-*,
           llvm-*,
-          llvmlibc-*,
           misc-*,
           modernize-*,
           objc-*,
@@ -438,8 +437,6 @@ CheckOptions:
     value:           'true'
   - key:             llvm-header-guard.HeaderFileExtensions
     value:           ';h;hh;hpp;hxx'
-  - key:             llvmlibc-restrict-system-libc-headers.Includes
-    value:           '-*'
   - key:             android-comparison-in-temp-failure-retry.RetryMacros
     value:           'TEMP_FAILURE_RETRY'
   - key:             concurrency-mt-unsafe.FunctionSet
