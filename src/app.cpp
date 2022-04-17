@@ -1,6 +1,8 @@
 #include <iostream>
 #include "about.h"
 
+// >_> i am learning c++, go away <_<;
+
 using std::cin, std::cout, std::endl;
 
 /**

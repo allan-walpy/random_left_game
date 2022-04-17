@@ -3,6 +3,8 @@
 #include <string>
 #include "versionInfo.cpp"
 
+using std::cout, std::endl;
+
 const std::string app_name = "random_left_game";
 const VersionInfo app_version = VersionInfo(0, 1, 3, "aazero");
 const std::string app_author = "allan_walpy";
