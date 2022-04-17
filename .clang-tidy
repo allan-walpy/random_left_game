@@ -4,7 +4,6 @@ Checks: |-
           android-*,
           boost-*,
           bugprone-*,
-          cert-*,
           google-*,
           clang-*,
           clang-analyzer-*,
@@ -328,8 +327,6 @@ CheckOptions:
     value:           ';h;hh;hpp;hxx'
   - key:             misc-uniqueptr-reset-release.IncludeStyle
     value:           'google'
-  - key:             cert-msc51-cpp.DisallowedSeedTypes
-    value:           'time_t,std::time_t'
   - key:             portability-restrict-system-includes.Includes
     value:           '*'
   - key:             portability-simd-intrinsics.Suggest
