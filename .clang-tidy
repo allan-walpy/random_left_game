@@ -12,7 +12,6 @@ Checks: |-
           clang-diagnosic-*,
           concurrency-*,
           cppcoreguidelines-*,
-          llvm-*,
           misc-*,
           modernize-*,
           objc-*,
@@ -435,8 +434,6 @@ CheckOptions:
     value:           '16'
   - key:             bugprone-unhandled-self-assignment.WarnOnlyIfThisHasSuspiciousField
     value:           'true'
-  - key:             llvm-header-guard.HeaderFileExtensions
-    value:           ';h;hh;hpp;hxx'
   - key:             android-comparison-in-temp-failure-retry.RetryMacros
     value:           'TEMP_FAILURE_RETRY'
   - key:             concurrency-mt-unsafe.FunctionSet
