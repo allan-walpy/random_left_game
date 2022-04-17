@@ -1,3 +1,158 @@
+---
 BasedOnStyle: Google
 IndentWidth: 4
-ColumnLimit: 0
+ColumnLimit: 120
+---
+Language: Cpp
+DisableFormat: false
+Standard: c++20
+DeriveLineEnding: true
+UseCRLF: false
+UseTab: Never
+TabWidth: 4
+ConstructorInitializerIndentWidth: 2
+ContinuationIndentWidth: 2
+IndentAccessModifiers: false
+IndentCaseBlocks: false
+IndentCaseLabels: true
+IndentExternBlock: Indent
+IndentGotoLabels: false
+IndentPPDirectives: BeforeHash
+PPIndentWidth: 4
+IndentRequires: true
+# IndentRequiresClause: true #++ clang-format v15 option; instead of `IndentRequires`;
+IndentWrappedFunctionNames: true
+LambdaBodyIndentation: Signature
+NamespaceIndentation: All
+PenaltyBreakAssignment: 4
+PenaltyBreakBeforeFirstCallParameter: 4
+PenaltyBreakComment: 4
+PenaltyBreakFirstLessLess: 4
+PenaltyBreakOpenParenthesis: 4
+PenaltyBreakString: 0
+PenaltyBreakTemplateDeclaration: 4
+PenaltyExcessCharacter: 4
+PenaltyIndentedWhitespace: 0
+PenaltyReturnTypeOnItsOwnLine: 0
+AccessModifierOffset: 0
+AlignAfterOpenBracket: Align
+AlignArrayOfStructures: Right
+AlignConsecutiveAssignments: AcrossComments
+AlignConsecutiveBitFields: AcrossComments
+AlignConsecutiveDeclarations: AcrossComments
+StatementAttributeLikeMacros: [ ]
+AlignConsecutiveMacros: AcrossComments
+AlignEscapedNewlines: Left
+AlignOperands: Align
+AlignTrailingComments: true
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLambdasOnASingleLine: All
+AllowShortLoopsOnASingleLine: true
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: No
+BinPackArguments: true
+BinPackParameters: true
+BitFieldColonSpacing: Both
+BreakBeforeBinaryOperators: All
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterCaseLabel: false
+  AfterClass: false
+  AfterControlStatement: Never
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterObjCDeclaration: false
+  AfterStruct: false
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  BeforeLambdaBody: false
+  BeforeWhile: false
+  IndentBraces: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  SplitEmptyNamespace: false
+BreakBeforeConceptDeclarations: false
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: BeforeColon
+BreakInheritanceList: BeforeColon
+BreakStringLiterals: true
+CompactNamespaces: true
+Cpp11BracedListStyle: false
+DerivePointerAlignment: false
+EmptyLineAfterAccessModifier: Always
+EmptyLineBeforeAccessModifier: Always
+ShortNamespaceLines: 0
+FixNamespaceComments: true
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '<.*>'
+    Priority: 0
+    SortPriority: 0
+    CaseSensitive: true
+  - Regex: '".*"'
+    Priority: 8
+    SortPriority: 8
+    CaseSensitive: true
+  - Regex: '.*'
+    Priority: 16
+    SortPriority: 16
+# InsertBraces: true #++ clang-format v15 option;
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+PackConstructorInitializers: BinPack
+PointerAlignment: Right
+ReferenceAlignment: Pointer
+#++ clang-format 14.0.1 bug - doesn't recognize `QualifierOrder` on `QualifierAlignment` as `Custom`;
+# QualifierAlignment: Custom
+# QualifierOrder: [ 'inline', 'static', 'constexp', 'volatile', 'type', 'const', 'restrict' ]
+ReflowComments: true
+# RequiresClausePosition: SingleLine #++ clang-format v15 option;
+SeparateDefinitionBlocks: Always
+SortIncludes: CaseInsensitive
+SortUsingDeclarations: true
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: true
+SpaceAfterTemplateKeyword: false
+SpaceAroundPointerQualifiers: Default
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterForeachMacros: true
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: true
+  AfterIfMacros: true
+  AfterOverloadedOperator: true
+  BeforeNonEmptyParentheses: false
+SpaceBeforeRangeBasedForLoopColon: true
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: true
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 4
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInConditionalStatement: false
+SpacesInContainerLiterals: true
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: -1
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+StatementMacros: []
+TypenameMacros: []
+WhitespaceSensitiveMacros: []
+...
