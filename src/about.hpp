@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "versionInfo.h"
+#include "versionInfo.hpp"
 
 namespace random_left {
 

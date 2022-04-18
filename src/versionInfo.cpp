@@ -25,7 +25,7 @@ namespace random_left {
          */
         [[nodiscard]] auto stringify () const -> string {
             return to_string(_major) + "." + to_string(_minor) + "." + to_string(_patch)
-                   + (empty(_appending) ? _appending : "-" + _appending);
+                   + (_appending == "" ? _appending : "-" + _appending);
         }
     };
 

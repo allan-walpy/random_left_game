@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "about.h"
+//#include "about.hpp"
 
 //!! >_> i am learning c++, go away <_<;
 
@@ -14,7 +14,7 @@ using std::cin, std::cout, std::endl;
 auto main () -> int {
     cout << "program://launch" << endl;
 
-    random_left::print_about_info();
+    // random_left::print_about_info();
     cin.get();
     return 0;
 }
