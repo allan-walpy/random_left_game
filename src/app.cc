@@ -6,17 +6,18 @@
 
 using std::cin, std::cout, std::endl;
 
-/**
- * @brief program entry point
- *
- * @return int
- */
+int exit();
+
 auto main () -> int {
     cout << "program://launch" << endl;
 
-    int x;
-    cout << x << endl;
+    int input;
+    cout << input << endl;
 
+    return exit();
+}
+
+auto exit () -> int {
     PrintAboutInfo();
     cout << "program://shutdon --input any_key - ";
     cin.get();
