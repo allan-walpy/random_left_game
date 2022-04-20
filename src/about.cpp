@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
 
-#include "versionInfo.hpp"
-
 using std::cout, std::endl;
 
 const std::string app_name    = "random_left_game";

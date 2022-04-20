@@ -1,6 +1,6 @@
-#include <string>
+#pragma once
 
-#include "versionInfo.hpp"
+#include <string>
 
 /**
  * @brief prints out about program info

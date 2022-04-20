@@ -6,8 +6,6 @@
             "label": "clang++/build",
             "command": "/usr/bin/clang++",
             "args": [
-                "-I",
-                "${workspaceFolder}/src/",
                 "-g",
                 "${workspaceFolder}/src/*.cpp",
                 "-o",
