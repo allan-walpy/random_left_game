@@ -17,7 +17,7 @@ auto main () -> int {
     int x;
     cout << x << endl;
 
-    print_about_info();
+    PrintAboutInfo();
     cout << "program://shutdon --input any_key - ";
     cin.get();
     return 0;

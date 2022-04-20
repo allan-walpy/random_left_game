@@ -6,4 +6,4 @@
  * @brief prints out about program info
  *
  */
-void print_about_info();
+void PrintAboutInfo();

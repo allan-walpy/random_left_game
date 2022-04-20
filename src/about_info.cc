@@ -3,11 +3,11 @@
 
 using std::cout, std::endl;
 
-const std::string app_name    = "random_left_game";
-const std::string app_version = "0.2.0-aazero";
-const std::string app_author  = "allan_walpy";
+const std::string kAppName    = "random_left_game";
+const std::string kAppVersion = "0.2.0-aazero";
+const std::string kAppAuthor  = "allan_walpy";
 
-void print_about_info () {
+void PrintAboutInfo () {
     cout << endl;
-    cout << app_name << " v" << app_version << " created by" << app_author << ";" << endl;
+    cout << kAppName << " v" << kAppVersion << " created by" << kAppAuthor << ";" << endl;
 }
