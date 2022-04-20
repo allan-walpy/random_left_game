@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "about.hpp"
+#include "about_info.h"
 
 //!! >_> i am learning c++, go away <_<;
 
@@ -14,7 +14,11 @@ using std::cin, std::cout, std::endl;
 auto main () -> int {
     cout << "program://launch" << endl;
 
+    int x;
+    cout << x << endl;
+
     print_about_info();
+    cout << "program://shutdon --input any_key - ";
     cin.get();
     return 0;
 }

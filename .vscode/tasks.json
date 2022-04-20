@@ -7,6 +7,61 @@
             "command": "/usr/bin/clang++",
             "args": [
                 "-g",
+                "${workspaceFolder}/src/*.cc",
+                "-o",
+                "${workspaceFolder}/out/app",
+                "-std=c++20",
+                "-pedantic-errors",
+                "-ferror-limit=27",
+                "-fcolor-diagnostics",
+                "-fshow-column",
+                "-fshow-source-location",
+                "-fcaret-diagnostics",
+                "-fdiagnostics-format=clang",
+                "-fdiagnostics-show-category=id",
+                "-fdiagnostics-fixit-info"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/out"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "g++/build",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/src/*.cc",
+                "-o",
+                "${workspaceFolder}/out/app",
+                "-std=c++2a",
+                "-pedantic-errors"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "detail": "compiler: /usr/bin/g++"
+        },
+        {
+            "type": "shell",
+            "label": "clang++/build/release",
+            "command": "/usr/bin/clang++",
+            "args": [
                 "${workspaceFolder}/src/*.cpp",
                 "-o",
                 "${workspaceFolder}/out/app",
@@ -34,35 +89,8 @@
             ],
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": false
             }
-        },
-        {
-            "type": "cppbuild",
-            "label": "g++/build",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-fdiagnostics-color=always",
-                // "-I",
-                // "${workspaceFolder}/src/",
-                "-g",
-                "${workspaceFolder}/src/*.cpp",
-                "-o",
-                "${workspaceFolder}/out/app",
-                "-std=c++2a",
-                "-pedantic-errors"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "compiler: /usr/bin/g++"
         }
     ]
 }

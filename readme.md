@@ -1,6 +1,9 @@
 # #random #left #readme
 
-## `launching shell...`
+## dev bureaucracy
+
+- [google style guides](https://google.github.io/styleguide/cppguide.html);
+- [code of conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/);
 
 ### ```user@github.com:/repo/random-left-game$ cat run.cpp```
 
