@@ -1,2 +1,5 @@
 out/
 obj/
+bin/
+
+src/bgfx/
