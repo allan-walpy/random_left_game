@@ -2,50 +2,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "lldb/clang-build",
-            "type": "lldb",
+            "name": "launch://",
+            "type": "coreclr",
             "request": "launch",
-            "program": "${workspaceFolder}/out/app",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/out/random.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/out/",
-            "preLaunchTask": "clang++/build"
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
         },
         {
-            "name": "lldb/g++-build",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/out/app",
-            "args": [],
-            "cwd": "${workspaceFolder}/out/",
-            "preLaunchTask": "g++/build"
-        },
-        {
-            "name": "gdb/clang-build",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/out/app",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/out/",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "preLaunchTask": "clang++/build",
-            "miDebuggerPath": "/usr/bin/gdb"
-        },
-        {
-            "name": "gdb/g++-build",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${workspaceFolder}/out/app",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/out/",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "preLaunchTask": "g++/build",
-            "miDebuggerPath": "/usr/bin/gdb"
-        },
+            "name": "attach://",
+            "type": "coreclr",
+            "request": "attach"
+        }
     ]
 }

@@ -1,6 +1,0 @@
-#!/bin/bash
-
-mkdir -p out && rm -f ./out/app &&
-    clang++ ./src/*.cpp -o ./out/app -std=c++20 && cd ./out/ &&
-    ./app && cd .. && exit 0 ||
-        cd .. && exit 1

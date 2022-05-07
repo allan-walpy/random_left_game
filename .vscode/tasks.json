@@ -2,95 +2,58 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
-            "label": "clang++/build",
-            "command": "/usr/bin/clang++",
+            "label": "restore",
+            "command": "dotnet",
+            "type": "process",
             "args": [
-                "-g",
-                "${workspaceFolder}/src/*.cc",
-                "-o",
-                "${workspaceFolder}/out/app",
-                "-std=c++20",
-                "-pedantic-errors",
-                "-ferror-limit=27",
-                "-fcolor-diagnostics",
-                "-fshow-column",
-                "-fshow-source-location",
-                "-fcaret-diagnostics",
-                "-fdiagnostics-format=clang",
-                "-fdiagnostics-show-category=id",
-                "-fdiagnostics-fixit-info"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}/out"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+                "restore"
+            ]
         },
         {
-            "type": "cppbuild",
-            "label": "g++/build",
-            "command": "/usr/bin/g++",
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${workspaceFolder}/src/*.cc",
-                "-o",
-                "${workspaceFolder}/out/app",
-                "-std=c++2a",
-                "-pedantic-errors"
+                "build",
+                "--use-current-runtime",
+                "--nologo",
+                "--output",
+                "${workspaceFolder}/out/",
+                "${workspaceFolder}/random.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            },
-            "detail": "compiler: /usr/bin/g++"
+            "problemMatcher": "$msCompile"
         },
         {
-            "type": "shell",
-            "label": "clang++/build/release",
-            "command": "/usr/bin/clang++",
+            "label": "publish-current",
+            "command": "dotnet",
+            "type": "process",
             "args": [
-                "${workspaceFolder}/src/*.cpp",
-                "-o",
-                "${workspaceFolder}/out/app",
-                "-std=c++20",
-                "-pedantic-errors",
-                "-Werror",
-                "-Wall",
-                "-Wextra",
-                "-Wsign-conversion",
-                "-Wnon-virtual-dtor",
-                "-ferror-limit=27",
-                "-fcolor-diagnostics",
-                "-fshow-column",
-                "-fshow-source-location",
-                "-fcaret-diagnostics",
-                "-fdiagnostics-format=clang",
-                "-fdiagnostics-show-category=id",
-                "-fdiagnostics-fixit-info"
+                "publish",
+                "--use-current-runtime",
+                "--no-restore",
+                "--nologo",
+                "--self-contained",
+                "--output",
+                "${workspaceFolder}/out/",
+                "${workspaceFolder}/random.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
-            "options": {
-                "cwd": "${workspaceFolder}/out"
-            },
-            "problemMatcher": [
-                "$gcc"
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/random.csproj"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            }
+            "problemMatcher": "$msCompile"
         }
     ]
 }
