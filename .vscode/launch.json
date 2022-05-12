@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "launch://",
+            "name": "launch",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
@@ -13,7 +13,17 @@
             "stopAtEntry": false
         },
         {
-            "name": "attach://",
+            "name": "launch no-build",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/out/random.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "attach",
             "type": "coreclr",
             "request": "attach"
         }
